@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <pthread.h>
+
+
+void* handle_thread (void* arg){
+	printf("function handle thread \n");
+}
+int main(int argc,char *argv[]){
+	pid_t childPid ;
+	pthread_t thread;
+	int i ;
+	switch(childPid = fork()){
+		case -1 :
+			printf("error create process \n");
+			break;
+		case 0 :
+			printf("create process child seccussefully \n");
+			printf("ID child: %d ,ID parent : %d \n", getpid(), getppid());
+			i = pthread_create(&thread,NULL,handle_thread,NULL);
+			if(i != 0){
+				printf("create thread faild \n");
+			}
+			else
+				printf("create thread sucessfully \n");
+			break;
+		default :
+			printf("process parent \n");
+			printf("ID child : %d , ID parent :%d \n", getpid() , getppid());
+			break;	
+
+	}
+	return 0 ;
+}

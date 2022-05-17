@@ -1,5 +1,5 @@
-SRC_PROCESS=signal.c
-EXE_PROCESS=signal
+SRC_PROCESS=dll.c
+EXE_PROCESS=dll
 CFLAGS=-Wall
 
 

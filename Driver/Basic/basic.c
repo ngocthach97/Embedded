@@ -10,7 +10,6 @@
 #include <linux/kthread.h>
 #include <linux/sched.h>
 #include <linux/delay.h>
-// #include <linux/mutex.h>
 
 struct _chrdev_typedef
 {

@@ -1,5 +1,5 @@
 SRC_PROCESS=pipe.c
-EXE_PROCESS=a.out
+EXE_PROCESS=pipe
 CFLAGS=-Wall
 
 

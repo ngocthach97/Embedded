@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "type_traits": "c",
+        "ip.h": "c",
+        "socket.h": "c",
+        "types.h": "c",
+        "netlink.h": "c",
+        "module.h": "c"
+    }
+}

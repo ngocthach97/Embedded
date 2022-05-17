@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Project/Linux/Driver/Timer/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Project/Linux/Driver/Timer/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Project/Linux/Driver/Timer/Module.symvers -e -i Module.symvers   -T -

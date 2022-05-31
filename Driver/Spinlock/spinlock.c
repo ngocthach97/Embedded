@@ -25,6 +25,17 @@ DEFINE_SPINLOCK(p_spinlock);
 
 int value_global = 0;
 
+static int i_link (struct dentry * d_dty ,struct inode * s_inode ,struct dentry *s_dty){
+	d_dty->d_parent = s_dty;
+	d_dty->d_inode = s_inode;
+	return 0;
+}
+
+static struct inode_operations inode_op = {
+	.link = i_link,
+};
+
+
 int function_handle_thread1(void *data)
 {
 	while (!kthread_should_stop())
@@ -87,6 +98,8 @@ ssize_t read_file(struct file *pfile, char __user *puser, size_t psize, loff_t *
 
 int open_file(struct inode *pinode, struct file *pfile)
 {
+	struct inode *in = pinode;
+	in->i_op = &inode_op;
 	printk("Open file ! \n");
 	return 0;
 }

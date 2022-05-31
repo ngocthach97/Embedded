@@ -6,6 +6,7 @@
         "socket.h": "c",
         "types.h": "c",
         "netlink.h": "c",
-        "module.h": "c"
+        "module.h": "c",
+        "unistd.h": "c"
     }
 }

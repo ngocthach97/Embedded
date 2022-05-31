@@ -3,6 +3,7 @@
 #include <linux/cdev.h>
 #include <linux/device.h>
 #include <linux/interrupt.h>
+#include <linux/irqreturn.h>
 
 struct _pchrdev {
 	dev_t num;
@@ -10,6 +11,15 @@ struct _pchrdev {
 	struct device *pdevice;
 	struct cdev *pcdev;
 } pchrdev;
+
+int data = 0;
+
+static int short_irq = 6;
+
+irqreturn_t  irq_service(int irq, void *dev_id){
+	printk("value %d",*(int *)dev_id);
+	return IRQ_HANDLED;
+}
 
 int open_file (struct inode *pinode , struct file *pfile){
 	printk("Open file !\n");
@@ -67,7 +77,9 @@ int __init init_module_char(void){
 	if(cdev_add(pchrdev.pcdev,pchrdev.num, 1) < 0){
 		printk("Cannot add device in system !\n");
 	}
-
+	if(request_irq(short_irq, irq_service, 0,"interrupt", (void *)&data)){
+		printk("Cannot register interrupt success !\n");
+	}
 	printk("Insert module success !\n");
 	return 0 ;
 
@@ -91,6 +103,8 @@ void __exit exit_module_char(void){
 	class_destroy(pchrdev.pclass);
 
 	unregister_chrdev_region(pchrdev.num, 1);
+
+	free_irq(short_irq, NULL);
 
 	printk("Remove module success !\n");
 }

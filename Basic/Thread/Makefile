@@ -1,5 +1,5 @@
-SRC_PROCESS=u_thread.c
-EXE_PROCESS=u_thread
+SRC_PROCESS=thread.c
+EXE_PROCESS=thread
 CFLAGS=-Wall
 
 

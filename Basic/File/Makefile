@@ -1,5 +1,5 @@
-SRC_PROCESS=u_file.c
-EXE_PROCESS=u_file
+SRC_PROCESS=file.c
+EXE_PROCESS=file
 CFLAGS=-Wall
 
 

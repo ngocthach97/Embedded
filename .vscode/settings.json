@@ -7,6 +7,10 @@
         "types.h": "c",
         "netlink.h": "c",
         "module.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "stat.h": "c",
+        "pepperonipizza.h": "c",
+        "cheesepizza.h": "c",
+        "blue.h": "c"
     }
 }

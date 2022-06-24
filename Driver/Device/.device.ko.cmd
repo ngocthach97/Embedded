@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Driver/Device/device.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Embedded/Driver/Device/device.ko /home/nguyen/Embedded/Driver/Device/device.o /home/nguyen/Embedded/Driver/Device/device.mod.o;  true

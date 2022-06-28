@@ -11,6 +11,13 @@
         "stat.h": "c",
         "pepperonipizza.h": "c",
         "cheesepizza.h": "c",
-        "blue.h": "c"
+        "blue.h": "c",
+        "row.h": "c",
+        "component.h": "c",
+        "chrono": "c",
+        "algorithm": "c",
+        "observer.h": "c",
+        "shape.h": "c",
+        "time.h": "c"
     }
 }

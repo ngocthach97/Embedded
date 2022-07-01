@@ -18,6 +18,11 @@
         "algorithm": "c",
         "observer.h": "c",
         "shape.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "utime.h": "c",
+        "fcntl.h": "c",
+        "stdlib.h": "c",
+        "inotify.h": "c",
+        "rtc.h": "c"
     }
 }

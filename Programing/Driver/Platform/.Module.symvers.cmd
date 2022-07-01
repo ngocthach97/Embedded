@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Driver/Platform/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Embedded/Driver/Platform/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Embedded/Driver/Platform/Module.symvers -e -i Module.symvers   -T -

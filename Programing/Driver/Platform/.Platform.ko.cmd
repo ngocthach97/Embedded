@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Driver/Platform/Platform.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Embedded/Driver/Platform/Platform.ko /home/nguyen/Embedded/Driver/Platform/Platform.o /home/nguyen/Embedded/Driver/Platform/Platform.mod.o;  true

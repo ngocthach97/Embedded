@@ -4,15 +4,14 @@
 
 2. Debugging by Printing.
 	- printk
-		- KERN_EMERG:
-		- KERN_ALERT
+		- KERN_EMERG 
+		- KERN_ALERT 
 		- KERN_CRIT
-		- KERN_ERR
-		- KERN_WARNING
-		- KERN_NOTICE
-		- KERN_INFO
-		- KERN_DEBUG
-
+		- KERN_ERR 
+		- KERN_WARNING 
+		- KERN_NOTICE 
+		- KERN_INFO 
+		- KERN_DEBUG 
 3. Debugging by Querying.
 
 4. Debugging by Watching.

@@ -1,5 +1,5 @@
-SRC_PROCESS=timer.c
-EXE_PROCESS=timer
+SRC_PROCESS=Main.c
+EXE_PROCESS=Main
 CFLAGS=-Wall
 
 

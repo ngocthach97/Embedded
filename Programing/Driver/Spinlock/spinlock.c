@@ -25,7 +25,8 @@ DEFINE_SPINLOCK(p_spinlock);
 
 int value_global = 0;
 
-static int i_link (struct dentry * d_dty ,struct inode * s_inode ,struct dentry *s_dty){
+static int i_link(struct dentry *d_dty, struct inode *s_inode, struct dentry *s_dty)
+{
 	d_dty->d_parent = s_dty;
 	d_dty->d_inode = s_inode;
 	return 0;
@@ -34,7 +35,6 @@ static int i_link (struct dentry * d_dty ,struct inode * s_inode ,struct dentry 
 static struct inode_operations inode_op = {
 	.link = i_link,
 };
-
 
 int function_handle_thread1(void *data)
 {

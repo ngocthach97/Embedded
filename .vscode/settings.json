@@ -23,6 +23,13 @@
         "fcntl.h": "c",
         "stdlib.h": "c",
         "inotify.h": "c",
-        "rtc.h": "c"
+        "rtc.h": "c",
+        "chain_handle3.h": "c",
+        "chain_handle.h": "c",
+        "redshapedecorator.h": "c",
+        "sem.h": "c",
+        "semaphore.h": "c",
+        "pthread.h": "c",
+        "string.h": "c"
     }
 }

@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/nguyen/Embedded/Programing/Basic/File-lock'
+gcc -Wall Main.c -o Main
+make: Leaving directory '/home/nguyen/Embedded/Programing/Basic/File-lock'
+ 

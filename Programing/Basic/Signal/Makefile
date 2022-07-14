@@ -1,5 +1,5 @@
-SRC_PROCESS=u_signal.c
-EXE_PROCESS=u_signal
+SRC_PROCESS=Main.c
+EXE_PROCESS=Main
 CFLAGS=-Wall
 
 

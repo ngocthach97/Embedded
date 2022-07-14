@@ -1,5 +1,5 @@
-SRC_PROCESS=sqlite3.c insert.c
-EXE_PROCESS=insert
+SRC_PROCESS=sqlite3.c Main.c
+EXE_PROCESS=Main
 CFLAGS=-Wall
 LDFLAGS=-lpthread -ldl
 

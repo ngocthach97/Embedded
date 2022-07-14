@@ -1,5 +1,5 @@
 some_file: 
-	cc -o u_spinlock u_spinlock.c
+	cc -o Main Main.c
 
 clean:
 	rm -f some_file

@@ -1,2 +1,0 @@
-Lay pid cua process dung lenh : ps -aux | grep u_signal
-Gui signal bang lenh : kill -2 pid 

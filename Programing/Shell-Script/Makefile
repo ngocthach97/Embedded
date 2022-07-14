@@ -1,5 +1,5 @@
-SRC_PROCESS=Demo.c
-EXE_PROCESS=Demo
+SRC_PROCESS=Main.c
+EXE_PROCESS=Main
 CFLAGS=-Wall
 
 

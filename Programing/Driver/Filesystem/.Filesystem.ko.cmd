@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Programing/Driver/Filesystem/Filesystem.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Embedded/Programing/Driver/Filesystem/Filesystem.ko /home/nguyen/Embedded/Programing/Driver/Filesystem/Filesystem.o /home/nguyen/Embedded/Programing/Driver/Filesystem/Filesystem.mod.o;  true

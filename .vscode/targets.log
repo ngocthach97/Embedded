@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 13 18:51:46 2022
+# Make data base, printed on Thu Jul 14 04:50:50 2022
 
 # Variables
 
@@ -22,8 +22,6 @@ GNOME_SHELL_SESSION_MODE = ubuntu
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bc2c6568-c83c-431e-a580-dd27b2a7d1aa.sock
 # environment
 VSCODE_CWD = /home/nguyen
 # default
@@ -44,16 +42,14 @@ PWD = /home/nguyen/Embedded
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/nguyen/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /home/nguyen/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.DFEYO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.KZUCP1
 # default
 .LOADED := 
 # default
@@ -62,8 +58,6 @@ XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.DFEYO1
 MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/nguyen/Embedded
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -89,15 +83,13 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 1963
+VSCODE_PID = 1971
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1562,unix/ubuntu:/tmp/.ICE-unix/1562
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1561,unix/ubuntu:/tmp/.ICE-unix/1561
 # automatic
 *F = $(notdir $*)
 # environment
@@ -135,9 +127,7 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 9d84083ae2c7496b9bc70875d79e421a
-# environment
-VSCODE_LOG_NATIVE = false
+INVOCATION_ID = 11f24a02787c4a82a2c0252ce081ee47
 # environment
 USERNAME = nguyen
 # environment
@@ -173,15 +163,15 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1412
+MANAGERPID = 1410
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 1963
+GIO_LAUNCHED_DESKTOP_FILE_PID = 1971
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:40637
+JOURNAL_STREAM = 8:41110
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -193,7 +183,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-3e8314b8-1.68.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-3e8314b8-1.69.1-main.sock
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -209,7 +199,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=3/125=2%
+# Load=93/1024=9%, Rehash=0, Collisions=2/120=2%
 
 # Pattern-specific Variable Values
 
@@ -275,6 +265,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Wed Jul 13 18:51:46 2022
+# Finished Make data base on Thu Jul 14 04:50:50 2022
 
  

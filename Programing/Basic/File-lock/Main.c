@@ -57,6 +57,7 @@ void *function_handle_write(void *data)
 int main(int argc, const char *argv[])
 {
     fd = open(pathname, O_RDWR);
+    
     if (pthread_create(&thread_1, NULL, function_handle_read, &fd) == -1)
     {
         printf("Cannot create thread 1 !\n");

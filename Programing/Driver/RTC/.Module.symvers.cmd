@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Embedded/Driver/RTC/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Embedded/Driver/RTC/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Embedded/Driver/RTC/Module.symvers -e -i Module.symvers   -T -

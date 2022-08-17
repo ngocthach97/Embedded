@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Programing/Driver/Device/modules.order := {   echo /home/nguyen/Embedded/Programing/Driver/Device/device.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Embedded/Programing/Driver/Device/modules.order

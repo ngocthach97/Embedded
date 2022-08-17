@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Programing/Driver/PCI/modules.order := {   echo /home/nguyen/Embedded/Programing/Driver/PCI/PCI.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Embedded/Programing/Driver/PCI/modules.order

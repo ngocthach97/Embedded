@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Programing/Driver/Network/Basic/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Embedded/Programing/Driver/Network/Basic/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Embedded/Programing/Driver/Network/Basic/Module.symvers -e -i Module.symvers   -T -

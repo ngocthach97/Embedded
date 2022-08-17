@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Network/Basic/net.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Project/Linux/Driver/Network/Basic/net.ko /home/nguyen/Project/Linux/Driver/Network/Basic/net.o /home/nguyen/Project/Linux/Driver/Network/Basic/net.mod.o;  true

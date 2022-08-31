@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/netfilter.mod := { echo  /home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/netfilter.o;  echo; } > /home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/netfilter.mod

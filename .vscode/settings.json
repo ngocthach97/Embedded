@@ -30,6 +30,17 @@
         "sem.h": "c",
         "semaphore.h": "c",
         "pthread.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "string_view": "c",
+        "array": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "string": "c",
+        "roundedsquare.h": "c",
+        "roundedrectangle.h": "c",
+        "errno.h": "c",
+        "broker.h": "c",
+        "buystock.h": "c",
+        "account.h": "c"
     }
 }

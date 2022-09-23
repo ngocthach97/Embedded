@@ -41,6 +41,7 @@
         "errno.h": "c",
         "broker.h": "c",
         "buystock.h": "c",
-        "account.h": "c"
+        "account.h": "c",
+        "startstate.h": "c"
     }
 }

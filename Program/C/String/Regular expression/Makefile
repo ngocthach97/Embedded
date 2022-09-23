@@ -1,5 +1,5 @@
-SRC_PROCESS = Originator.c Memento.c CareTaker.c main.c
-EXE_PROCESS = main
+SRC_PROCESS=main.c
+EXE_PROCESS=main
 CFLAGS=-Wall
 
 

@@ -1,5 +1,5 @@
-SRC_PROCESS=main.c
-EXE_PROCESS=main
+SRC_PROCESS = State.c StopState.c StartState.c Context.c main.c
+EXE_PROCESS = main
 CFLAGS=-Wall
 
 

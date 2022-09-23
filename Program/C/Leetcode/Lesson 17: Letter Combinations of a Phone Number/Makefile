@@ -1,6 +1,6 @@
-SRC_PROCESS=main.c
-EXE_PROCESS=main
-CFLAGS=-Wall
+SRC_PROCESS = main.c
+EXE_PROCESS = main
+CFLAGS = -Wall
 
 
 all:

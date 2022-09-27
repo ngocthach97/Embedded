@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Network/ICMP/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Project/Linux/Driver/Network/ICMP/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Project/Linux/Driver/Network/ICMP/Module.symvers -e -i Module.symvers   -T -

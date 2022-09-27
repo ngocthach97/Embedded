@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Network/Netlink/netlink.mod := { echo  /home/nguyen/Project/Linux/Driver/Network/Netlink/netlink.o;  echo; } > /home/nguyen/Project/Linux/Driver/Network/Netlink/netlink.mod

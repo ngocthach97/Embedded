@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Memory/Share_Memory/share_memory.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Project/Linux/Driver/Memory/Share_Memory/share_memory.ko /home/nguyen/Project/Linux/Driver/Memory/Share_Memory/share_memory.o /home/nguyen/Project/Linux/Driver/Memory/Share_Memory/share_memory.mod.o;  true

@@ -1,33 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-struct Node
-{
-	int data;
-	struct node *left;
-	struct node *right;
-};
-
-struct Node *initNode(int data)
-{
-	struct Node *n = (struct Node *)malloc(sizeof(struct Node));
-	n->data = data;
-	n->left = NULL;
-	n->right = NULL;
-	return n;
-}
-
-void addElementInTree(struct Node *root, int data)
-{
-}
-
-bool searchElementInTree(struct Node *root, int data)
-{
-
-}
+#include "binary_tree.h"
 
 int main(int argc, const char *argv[])
 {
+	struct node *root = init_tree();
+	add_node(root, 2);
+	add_node(root, 1);
+	add_node(root, 3);
 	return 0;
 }

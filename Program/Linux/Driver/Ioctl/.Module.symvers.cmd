@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Ioctl/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Project/Linux/Driver/Ioctl/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Project/Linux/Driver/Ioctl/Module.symvers -e -i Module.symvers   -T -

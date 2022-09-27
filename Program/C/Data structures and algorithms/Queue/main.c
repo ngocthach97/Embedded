@@ -1,22 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+#include "queue.h"
 
-int pop(int *queue, int size)
+int main(int argc, const char *grav[])
 {
-	return 0;
-}
-
-void push(int data, int *queue, int size)
-{
-}
-
-bool isEmpty(int *queue, int size)
-{
-	return false;
-}
-
-int main(int argc, const char *argv[])
-{
-	return 0;
+    struct head *root = init_queue();
+    printf("%d", enQueue(root, 1));
+    printf("%d", enQueue(root, 2));
+    printf("%d", root->length);
+    return 0;
 }

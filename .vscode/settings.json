@@ -42,6 +42,12 @@
         "broker.h": "c",
         "buystock.h": "c",
         "account.h": "c",
-        "startstate.h": "c"
+        "startstate.h": "c",
+        "bitset": "c",
+        "single_list.h": "c",
+        "stdbool.h": "c",
+        "person.h": "c",
+        "numbers": "c",
+        "kernel.h": "c"
     }
 }

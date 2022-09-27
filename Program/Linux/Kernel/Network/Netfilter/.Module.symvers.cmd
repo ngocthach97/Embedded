@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/Module.symvers -e -i Module.symvers   -T -

@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/modules.order := {   echo /home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/netfilter.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Embedded/Program/Linux/Kernel/Network/Netfilter/modules.order

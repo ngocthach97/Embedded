@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Memory/Basic/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Project/Linux/Driver/Memory/Basic/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Project/Linux/Driver/Memory/Basic/Module.symvers -e -i Module.symvers   -T -

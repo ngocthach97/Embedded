@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Ioctl/ioctl.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Project/Linux/Driver/Ioctl/ioctl.ko /home/nguyen/Project/Linux/Driver/Ioctl/ioctl.o /home/nguyen/Project/Linux/Driver/Ioctl/ioctl.mod.o;  true

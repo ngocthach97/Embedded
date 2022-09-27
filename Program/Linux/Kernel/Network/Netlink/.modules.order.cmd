@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Network/Netlink/modules.order := {   echo /home/nguyen/Project/Linux/Driver/Network/Netlink/netlink.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Project/Linux/Driver/Network/Netlink/modules.order

@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Network/Socket/modules.order := {   echo /home/nguyen/Embedded/Program/Linux/Kernel/Network/Socket/socket.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Embedded/Program/Linux/Kernel/Network/Socket/modules.order

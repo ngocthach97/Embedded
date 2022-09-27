@@ -30,14 +30,15 @@ int total;
 
 void *function_thread(void *data)
 {
-    value_lock_thread = pthread_mutex_lock(&lock_thread);
-    if (value_lock_thread != 0)
-    {
-        printf("Cannot create mutex thread 1 !\n");
-    }
+    // value_lock_thread = pthread_mutex_lock(&lock_thread);
+    // if (value_lock_thread != 0)
+    // {
+    //     printf("Cannot create mutex thread 1 !\n");
+    // }
     if (done == 1)
     {
         done = 2;
+ 
         printf("Waiting thread 1...... \n");
         value_cond_wait = pthread_cond_wait(&cond_thread, &lock_thread);
         if (value_cond_wait != 0)
@@ -49,7 +50,7 @@ void *function_thread(void *data)
     else
     {
         printf("Waiting thread 2...... \n");
-        // done = 1;
+        done = 1;
         value_cond_signal = pthread_cond_signal(&cond_thread);
         if (value_cond_signal != 0)
         {
@@ -76,7 +77,7 @@ int main(int agrv, const char *argc[])
     {
         printf("Cannot create thread 2 !\n");
     }
-
+    
     if (pthread_join(thread_2, NULL) != 0)
     {
         printf("cannot join thread 2 !\n");

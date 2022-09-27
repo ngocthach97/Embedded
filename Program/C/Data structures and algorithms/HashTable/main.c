@@ -11,7 +11,7 @@ struct Node
 
 struct Node *array[size];
 
-void init()
+void initHashTable()
 {
 	for (int i = 0; i < size; i++)
 		array[i] = NULL;
@@ -112,7 +112,7 @@ void printHashTable()
 
 int main(int argc, const char *argv[])
 {
-	init();
+	initHashTable();
 	insertNode(0);
 	insertNode(10);
 	insertNode(20);

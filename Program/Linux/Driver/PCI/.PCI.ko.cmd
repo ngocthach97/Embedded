@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Embedded/Programing/Driver/PCI/PCI.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Embedded/Programing/Driver/PCI/PCI.ko /home/nguyen/Embedded/Programing/Driver/PCI/PCI.o /home/nguyen/Embedded/Programing/Driver/PCI/PCI.mod.o;  true

@@ -376,10 +376,10 @@ void swapNodes(struct Node *root, int k)
 }
 
 // Odd Even Linked List
-void oddEvenList(struct Node *root)
-{
-    
-}
+// void oddEvenList(struct Node *root)
+// {
+
+// }
 
 // Intersection of Two Linked Lists
 // void getIntersectionNode(struct Node *root1, struct Node *root2)
@@ -431,17 +431,35 @@ struct Node *getNodeMiddleInList(struct Node *root, int start, int end)
 // }
 
 // Convert Binary Number in a Linked List to Integer
-int getDecimalValue(struct Node* root){
-    struct Node* node = root->next;
+int getDecimalValue(struct Node *root)
+{
+    struct Node *node = root->next;
     int length = lengthList(root);
     int decimal = 0;
-   for (int i = 0; i < length; i++)
-   {
-    int a = (int)pow(2,i);
-    decimal += (node->num)*a;
-    node = node->next;
-   }
+    for (int i = 0; i < length; i++)
+    {
+        int a = (int)pow(2, i);
+        decimal += (node->num) * a;
+        node = node->next;
+    }
     return decimal;
+}
+
+// Merge Two Sorted Lists
+struct ListNode *mergeTwoLists(struct Node *root1, struct Node *root2)
+{
+}
+
+// Split Linked List in Parts
+struct ListNode **splitListToParts(struct Node *root, int k, int *returnSize)
+{
+    int length = lengthList(root);
+    if (length >= k)
+    {
+    }
+    else
+    {
+    }
 }
 
 int main(int agrv, const char *argc[])

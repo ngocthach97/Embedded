@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Interrupt/Top-half/modules.order := {   echo /home/nguyen/Project/Linux/Driver/Interrupt/Top-half/interrupt.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Project/Linux/Driver/Interrupt/Top-half/modules.order

@@ -1,1 +1,0 @@
-cmd_/home/nguyen/Project/Linux/Driver/Ioctl/modules.order := {   echo /home/nguyen/Project/Linux/Driver/Ioctl/ioctl.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Project/Linux/Driver/Ioctl/modules.order

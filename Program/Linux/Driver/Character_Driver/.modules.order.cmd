@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/modules.order := {   echo /home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/character.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/modules.order

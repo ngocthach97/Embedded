@@ -1,1 +1,1 @@
-cmd_/home/nguyen/Project/Linux/Driver/Mutex/Module.symvers := sed 's/ko$$/o/' /home/nguyen/Project/Linux/Driver/Mutex/modules.order | scripts/mod/modpost -m -a   -o /home/nguyen/Project/Linux/Driver/Mutex/Module.symvers -e -i Module.symvers   -T -
+cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/Module.symvers := sed 's/\.ko$$/\.o/' /home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/modules.order | scripts/mod/modpost -m -a  -o /home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/Module.symvers -e -i Module.symvers   -T -

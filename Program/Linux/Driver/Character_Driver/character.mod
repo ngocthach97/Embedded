@@ -1,0 +1,2 @@
+/home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/character.o
+

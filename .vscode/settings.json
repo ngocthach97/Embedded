@@ -48,6 +48,10 @@
         "stdbool.h": "c",
         "person.h": "c",
         "numbers": "c",
-        "kernel.h": "c"
+        "kernel.h": "c",
+        "ioctl.h": "c",
+        "uio.h": "c",
+        "deque.h": "c",
+        "array.h": "c"
     }
 }

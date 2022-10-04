@@ -1,1 +1,1 @@
-cmd_/home/nguyen/Project/Linux/Driver/Mutex/mutex.mod := { echo  /home/nguyen/Project/Linux/Driver/Mutex/mutex.o;  echo; } > /home/nguyen/Project/Linux/Driver/Mutex/mutex.mod
+cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/mutex.mod := { echo  /home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/mutex.o;  echo; } > /home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/mutex.mod

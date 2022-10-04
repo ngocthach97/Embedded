@@ -1,1 +1,1 @@
-cmd_/home/nguyen/Project/Linux/Driver/Mutex/modules.order := {   echo /home/nguyen/Project/Linux/Driver/Mutex/mutex.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Project/Linux/Driver/Mutex/modules.order
+cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/modules.order := {   echo /home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/mutex.ko; :; } | awk '!x[$$0]++' - > /home/nguyen/Embedded/Program/Linux/Kernel/Basic/Mutex/modules.order

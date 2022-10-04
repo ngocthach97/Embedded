@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Program/Linux/Kernel/Network/Socket/socket.mod := { echo  /home/nguyen/Embedded/Program/Linux/Kernel/Network/Socket/socket.o;  echo; } > /home/nguyen/Embedded/Program/Linux/Kernel/Network/Socket/socket.mod

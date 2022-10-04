@@ -195,12 +195,17 @@ void delete_node_position(struct node *root, int position)
 	}
 }
 
-void swap(int value_1, int value_2)
+struct node *get_tail(struct node *root)
 {
-	int a = value_1;
-	value_1 = value_2;
-	value_2 = a;
+	int length = length_list(root);
+	struct node *run = root->next;
+	for (int i = 0; i < length - 1; i++)
+	{
+		run = run->next;
+	}
+	return run;
 }
+
 bool linear_search(struct node *root, int data)
 {
 	struct node *run = root->next;
@@ -238,4 +243,133 @@ void bubble_sort(struct node *root)
 			}
 		}
 	}
+}
+
+void swapPairs(struct node *root)
+{
+	struct node *run = root->next;
+	struct node *node;
+	while (run->next != NULL)
+	{
+		node = run->next;
+		int a = run->data;
+		run->data = node->data;
+		node->data = a;
+		if (node->next == NULL)
+		{
+			break;
+		}
+		else
+		{
+			run = node->next;
+		}
+	}
+}
+
+void reverseKGroup(struct node *root, int k)
+{
+	struct node *run = root->next;
+	struct node *node;
+	int length = length_list(root);
+	int count = length / k;
+	for (int i = 0; i < count; i++)
+	{
+		node = run;
+		int stack[k];
+		for (int j = 0; j < k; j++)
+		{
+			stack[j] = run->data;
+			run = run->next;
+		}
+		for (int h = k - 1; h >= 0; h--)
+		{
+			node->data = stack[h];
+			node = node->next;
+		}
+	}
+}
+
+struct node *partition(struct node *root, int x)
+{
+	struct node *run = root->next;
+	struct node *before = init_list();
+	struct node *after = init_list();
+	while (run != NULL)
+	{
+		if (run->data < x)
+		{
+			add_tail(after, run->data);
+		}
+		else
+		{
+			add_tail(before, run->data);
+		}
+		run = run->next;
+	}
+	struct node *tail = get_tail(after);
+	tail->next = before->next;
+	return after;
+}
+
+struct node *oddEvenList(struct node *root)
+{
+	struct node *run = root->next;
+	struct node *odd = init_list();
+	struct node *even = init_list();
+	int index = 0;
+	while (run != NULL)
+	{
+		int value = index % 2;
+		if (value == 0)
+		{
+			add_tail(even, run->data);
+		}
+		else
+		{
+			add_tail(odd, run->data);
+		}
+		index++;
+		run = run->next;
+	}
+	struct node *tail = get_tail(odd);
+	tail->next = even->next;
+	return odd;
+}
+
+struct node *mergeTwoLists(struct node *list1, struct node *list2)
+{
+	struct node *run1 = list1->next;
+	struct node *run2 = list2->next;
+	struct node *merge = init_list();
+	while (1)
+	{
+		if (run1 == NULL && run2 == NULL)
+		{
+			break;
+		}
+		else if (run1 != NULL && run2 == NULL)
+		{
+			add_tail(merge, run1->data);
+			run1 = run1->next;
+		}
+		else if (run1 == NULL && run2 != NULL)
+		{
+			add_tail(merge, run2->data);
+			run2 = run2->next;
+		}
+		else
+		{
+			if (run1->data > run2->data)
+			{
+				add_tail(merge, run2->data);
+				run2 = run2->next;
+			}
+			else
+			{
+				add_tail(merge, run1->data);
+				run1 = run1->next;
+			}
+		}
+	}
+	return merge;
 }

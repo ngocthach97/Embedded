@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Program/Linux/Driver/Network_Driver/network.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Embedded/Program/Linux/Driver/Network_Driver/network.ko /home/nguyen/Embedded/Program/Linux/Driver/Network_Driver/network.o /home/nguyen/Embedded/Program/Linux/Driver/Network_Driver/network.mod.o;  true

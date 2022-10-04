@@ -1,0 +1,1 @@
+cmd_/home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/character.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/character.ko /home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/character.o /home/nguyen/Embedded/Program/Linux/Driver/Character_Driver/character.mod.o;  true

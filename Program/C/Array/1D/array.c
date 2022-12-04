@@ -1,8 +1,8 @@
 #include <stdbool.h>
 #include "array.h"
 #include <stdio.h>
-
-int get_value_max_array1D(int *array, int size)
+#include <limits.h>
+int getMax(int *array, int size)
 {
     int value = *(array);
     for (int i = 0; i < size; i++)
@@ -15,7 +15,7 @@ int get_value_max_array1D(int *array, int size)
     return value;
 }
 
-int get_value_min_array1D(int *array, int size)
+int getMin(int *array, int size)
 {
     int value = *(array);
     for (int i = 0; i < size; i++)
@@ -28,7 +28,7 @@ int get_value_min_array1D(int *array, int size)
     return value;
 }
 
-int get_count_even_number1D(int *array, int size)
+int getCountEven(int *array, int size)
 {
     int count = 0;
     for (int i = 0; i < size; i++)
@@ -42,7 +42,7 @@ int get_count_even_number1D(int *array, int size)
     return count;
 }
 
-int get_count_odd_number1D(int *array, int size)
+int getCountOdd(int *array, int size)
 {
     int count = 0;
     for (int i = 0; i < size; i++)
@@ -56,7 +56,7 @@ int get_count_odd_number1D(int *array, int size)
     return count;
 }
 
-void sort_array1D(int *array, int size)
+void sort(int *array, int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
@@ -72,7 +72,7 @@ void sort_array1D(int *array, int size)
     }
 }
 
-int *reverse_array1D(int *array, int size)
+int *reverse(int *array, int size)
 {
     int reverse[size];
     for (int i = 0; i < size; i++)
@@ -83,7 +83,7 @@ int *reverse_array1D(int *array, int size)
     return b;
 }
 
-bool find_array1D(int *array, int size, int target)
+bool find(int *array, int size, int target)
 {
     for (int i = 0; i < size; i++)
     {
@@ -109,7 +109,7 @@ int searchInsert(int *array, int size, int target)
     return position;
 }
 
-void print_array1D(int *array, int size)
+void printArray(int *array, int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -198,12 +198,96 @@ int maxSubArray(int *array, int size)
     return max;
 }
 
-int *removeDuplicatesII(int *array, int size)
-{
-    
+
+int maxArea(int* array, int size){
+    int areaMax = 0; 
+    for(int i = 0; i < size; i++){
+        int height = *(array+i);
+        for(int j = i; j < size; j++){
+            int H = *(array+j);
+            int width = j-i;
+            if(height > H){
+                int area = H*width;
+                if(area > areaMax){
+                    areaMax = area ;
+                }
+            }
+            else{
+                int area = height*width;
+                if(area > areaMax){
+                    areaMax = area ;
+                }
+            }
+        }
+    }
+    return areaMax ;
 }
 
-bool containsNearbyDuplicate(int *array, int size, int k)
-{
+int findDuplicate(int* array, int size){
+    for(int i = 0; i < size ; i ++){
+        int num = *(array+i);
+        for(int j = i+1; j< size ; j++){
+            int run = *(array+j);
+            if(num == run){
+                return num;
+            }
+        }
+    }
+    return -1;
+}
 
-} 
+int thirdMax(int* array, int size){
+    int maxFirst = *(array);
+    for(int i = 0 ; i < size ; i++){
+        if(*(array+i) > maxFirst){
+            maxFirst = *(array+i);
+        }
+    }
+    int maxSecond = INT_MIN; 
+    for(int i = 0 ; i < size ; i++){
+        if(*(array+i) > maxSecond && *(array+i) < maxFirst){
+            maxSecond = *(array+i) ;
+        }
+    }
+    int maxThird = INT_MIN; 
+    for(int i = 0 ; i < size ; i++){
+        if(*(array+i) > maxThird && *(array+i) < maxSecond){
+             maxThird = *(array+i) ;
+        }
+    }
+    return maxThird;
+}
+
+int splitArray(int* array, int size, int k){
+    int max = 0;
+    for(int i = 0; i < size-k+1 ; i++){
+        int sum = 0 ;
+        for(int j = i ; j < i+k ; j++){
+            sum = sum +(*(array+j)); 
+        }
+        if(sum > max){
+            max = sum;
+        }
+    }
+    return max;
+}
+
+int* twoSum(int* array, int size, int target, int* returnArray){
+    for(int i = 0  ; i < size ; i++){
+        int value1 = *(array+i);
+        for(int j = i+1 ; j < size ; j ++){
+        int value2 = *(array+j);
+            int sum = value1 + value2;
+            if(sum == target){
+                *(returnArray+0)=i;
+                *(returnArray+1)=j;
+                return returnArray;
+            }
+            else{
+                *(returnArray+0)=-1;
+                *(returnArray+1)=-1;
+            }
+        }
+    }
+    return returnArray;
+}

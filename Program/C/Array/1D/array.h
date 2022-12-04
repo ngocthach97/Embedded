@@ -1,23 +1,23 @@
 #ifndef ARRAY_1D
 #define ARRAY_1D
 
-int get_value_max_array1D(int *, int size);
+int getMax(int *, int size);
 
-int get_value_min_array1D(int *, int size);
+int getMin(int *, int size);
 
-int get_count_even_number1D(int *, int size);
+int getCountEven(int *, int size);
 
-int get_count_odd_number1D(int *, int size);
+int getCountOdd(int *, int size);
 
-void sort_array1D(int *, int size);
+void sort(int *, int size);
 
-int *reverse_array1D(int *, int size);
+int *reverse(int *, int size);
 
-bool find_array1D(int *, int size, int target);
+bool find(int *, int size, int target);
 
 int searchInsert(int *, int size, int target);
 
-void print_array1D(int *, int size);
+void printArray(int *, int size);
 
 int *searchRange(int *, int size, int target, int *);
 
@@ -27,8 +27,14 @@ int *removeElement(int *, int size, int val);
 
 int maxSubArray(int *, int size);
 
-int *removeDuplicatesII(int *, int size);
+int maxArea(int* array, int size);
 
-bool containsNearbyDuplicate(int* , int size, int k);
+int findDuplicate(int* array, int size);
+
+int thirdMax(int* array, int size);
+
+int splitArray(int* array, int size, int k);
+
+int* twoSum(int* array, int size, int target, int* returnArray);
 
 #endif
